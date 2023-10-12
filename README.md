@@ -33,5 +33,6 @@ addpath('$your_own_path/Function');
 load('$your_own_path/data/training/q_init_1.mat')
 ```
 
-And then you can run the code. 
+And then you can run the code.
+
 The different double support can be selected by changing chosed trainng or testing in `data`.
