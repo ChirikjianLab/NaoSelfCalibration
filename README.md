@@ -25,6 +25,8 @@ We presents a novel method for smallersized humanoid robots to self-calibrate th
 ## Implementation
 Please make sure you have matlab on you PC and download all the source codes and data to your preferred directory.
 
+Please notice that we use matlab default rotation matrix, `rotx, roty, rotz`. The default trigonometric functions of them are in degrees as `sind` and `cosd`. Please remember to custumize them with `sin` and `cos`.
+
 The executable humanoid whole-body motion planning based on model-predict control code is `NAO_FootCal_MPC_paper.m`. All the called functions are in the folder: 'Function'.  
 
 Kindly change the path to your own directory. 
@@ -32,7 +34,5 @@ Kindly change the path to your own directory.
 addpath('$your_own_path/Function');
 load('$your_own_path/data/training/q_init_1.mat')
 ```
-
-And then you can run the code.
-
+And then you can run the code. 
 The different double support can be selected by changing chosed trainng or testing in `data`.
